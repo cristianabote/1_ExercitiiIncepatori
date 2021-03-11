@@ -1,6 +1,7 @@
 package com.company;
 
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
 
@@ -19,9 +20,14 @@ public class Main {
         System.out.println("   JJ       a    a         v       a    a ");
         System.out.println("*--------------------------------------*");
 
-        //Aria si Perimetrul unui dreptunghi
-        int L1=5;
-        int L2=8;
+        //Aria si Perimetrul unui dreptunghi- citire de la tastatura
+        int L1;
+        int L2;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Introduceti dimensiunea primei laturi:");
+        L1=scan.nextInt();
+        System.out.println("Introduceti dimensiunea celei dea doua laturi: ");
+        L2=scan.nextInt();
         System.out.println("Perimetrul dreptunghiului este "+((L1+L2)*2));
 
         System.out.println("Aria dreptunghiului este: "+ (L1*L2));
